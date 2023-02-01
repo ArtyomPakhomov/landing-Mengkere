@@ -1,0 +1,28 @@
+@import "./_swiper.css";
+
+@import "./_normalize.css";
+@import "./_variables.css";
+@import "./_fonts.css";
+@import "./_defaults.css";
+@import "./_helpers.css";
+@import "./_resets.css";
+
+/* commons */
+@import "./commons/_button.css";
+@import "./commons/_text.css";
+@import "./commons/_nav.css";
+@import "./commons/_icons.css";
+@import "./commons/_burger.css";
+
+/* components */
+
+@import "../components/preloader/_preloader.css";
+@import "../components/header/_header.css";
+@import "../components/hero/_hero.css";
+@import "../components/ticker/_ticker.css";
+@import "../components/novelties/_novelties.css";
+@import "../components/grade/_grade.css";
+@import "../components/builds/_builds.css";
+@import "../components/community/_community.css";
+
+@import "../components/footer/_footer.css";

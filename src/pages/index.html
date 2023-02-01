@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- !Meta tegs -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable = no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+
+    <!-- !Favicons -->
+    <link type="image/x-icon" rel="shortcut icon" href="./favicon.ico" />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      type="image/png"
+      sizes="192x192"
+      rel="icon"
+      href="./img/favicon/android-chrome-192x192.png"
+    />
+    <link
+      type="image/png"
+      sizes="512x512"
+      rel="icon"
+      href="./img/favicon/android-chrome-512x512.png"
+    />
+
+    <link
+      sizes="180x180"
+      rel="apple-touch-icon"
+      href="…/apple-touch-icon-180x180.png"
+    />
+
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="application-name" content="My Application" />
+
+    <link rel="manifest" href="./site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- !Title -->
+    <title>Mengkere</title>
+
+    <!-- !Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="./styles/style.min.css" />
+  </head>
+  <body class="stop-scroll page-body">
+    @include("../components/preloader/preloader.html")
+    @include("../components/header/header.html")
+    @include("../components/hero/hero.html")
+    @include("../components/ticker/ticker.html")
+    @include("../components/novelties/novelties.html")
+    @include("../components/grade/grade.html")
+    @include("../components/ticker/ticker.html")
+    @include("../components/builds/builds.html")
+    @include("../components/community/community.html")
+    @include("../components/footer/footer.html")
+  </body>
+</html>

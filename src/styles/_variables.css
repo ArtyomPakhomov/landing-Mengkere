@@ -1,0 +1,29 @@
+:root {
+  /** colors */
+  --color-main: #171717;
+  --color-light: #fff;
+  --color-dark: #000;
+  --color-accent: #4434c9;
+  --color-secondary: #757575;
+  --color-border: rgba(35, 35, 35, 0.16);
+
+  /** fonts */
+  --font-main: 18px; /* 18px */
+  --font-title-hero: 7.111rem; /* 128px */
+  --font-title-hero-orig: 1.333rem; /* 24px */
+  --font-title: 3.222rem; /* 58px */
+
+  --font-robot-model: 1.055rem; /* 19px */
+  --font-robot-name: 1.222rem; /* 22px */
+  --font-robot-model-sm: 0.833rem; /* 15px */
+  --font-robot-name-sm: 0.944rem; /* 17px */
+
+  --font-small: 0.777rem; /* 14px */
+
+  --font-item: 1.777rem; /* 32px */
+
+  /* height */
+
+  --height-header: 0;
+  --padding-offset: 0;
+}

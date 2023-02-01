@@ -1,0 +1,121 @@
+.community {
+  position: relative;
+  border-top: 1px solid rgba(35, 35, 35, 0.16);
+  border-bottom: 1px solid rgba(35, 35, 35, 0.16);
+  z-index: -1;
+}
+
+.community__container {
+  position: relative;
+  padding: 80px 0;
+  background-image: url("../img/community-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.community__image-bg {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.community__title-orig {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.community__title {
+  margin-bottom: 32px;
+}
+
+.community__descr {
+  max-width: 473px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 1199px) {
+  .community__image-bg {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .community__content {
+    position: relative;
+    z-index: 10;
+  }
+  .community__image-bg {
+    width: 80%;
+  }
+  .community__container {
+    padding: calc(80px / 1.2) 0;
+  }
+  .community__descr {
+    max-width: 373px;
+  }
+}
+
+@media (max-width: 768px) {
+  .community__content {
+    position: relative;
+    z-index: 10;
+  }
+  .community__image-bg {
+    /* width: 90%; */
+  }
+  .community__container {
+    padding: calc(80px / 1.5) 0;
+  }
+
+  .community__title-orig {
+    margin-bottom: calc(24px / 1.5);
+  }
+
+  .community__title {
+    margin-bottom: calc(32px / 1.5);
+  }
+
+  .community__descr {
+    max-width: 273px;
+    margin-bottom: calc(48px / 1.5);
+  }
+}
+
+@media (max-width: 575px) {
+  .community__content {
+    position: relative;
+    z-index: 10;
+  }
+  .community__image-bg {
+    width: 100%;
+  }
+  .community__container {
+    padding: calc(80px / 1.5) 0;
+  }
+
+  .community__title-orig {
+    margin-bottom: calc(24px / 1.5);
+  }
+
+  .community__descr {
+    max-width: 273px;
+    margin-bottom: calc(48px / 1.5);
+    font-size: 18px;
+    opacity: 0.8;
+    color: black;
+  }
+
+  .community__title {
+    margin-bottom: calc(32px / 1.5);
+    font-size: 2.8em;
+  }
+}
+
+@media (max-width: 360px) {
+  .community__image-bg {
+    width: 100%;
+    height: 70%;
+  }
+}

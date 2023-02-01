@@ -1,0 +1,79 @@
+.grade__header {
+  margin-bottom: 75px;
+}
+
+.grade__title-section-orig {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.grade-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 40px;
+  background: url("../img/grade-item-bg.jpg");
+}
+
+.grade-item__title {
+  margin-bottom: 32px;
+  transition: color 0.3s ease-in-out;
+}
+
+.grade-item__descr {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.grade-item__btn {
+  margin-top: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.grade-item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.grade-item:hover .grade-item__title {
+  color: var(--color-light);
+}
+
+.grade-item:hover .grade-item__descr,
+.grade-item:hover .grade-item__btn {
+  opacity: 1;
+}
+
+.grade-item__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(68, 52, 201, 0.8) 0%,
+    rgba(68, 52, 201, 0) 100%
+  );
+  backdrop-filter: blur(60px);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 10;
+}
+
+.grade-item:hover .grade-item__img::after {
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .grade__header {
+    margin-bottom: calc(75px / 2);
+  }
+}
